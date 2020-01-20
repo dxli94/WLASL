@@ -3,7 +3,7 @@ WLASL is a large-scale video dataset for Word-Level American Sign Language (ASL)
 
 Download
 ---------------
-Please follow the [link](https://drive.google.com/open?id=1hCtNChuNpvA7ShdU_bGClZsBmn4X7FfN) for downloading. We suggest reading README before using the dataset.
+Please follow the [link](https://drive.google.com/open?id=1hCtNChuNpvA7ShdU_bGClZsBmn4X7FfN) for downloading. We suggest reading [README](https://github.com/dxli94/WLASL/blob/master/README.md) before using the dataset.
 
 News
 ---------------
@@ -30,7 +30,7 @@ Please cite the [WLASL paper](https://arxiv.org/abs/1910.11006) if it helps your
           year={2019},
           eprint={1910.11006},
           archivePrefix={arXiv},
-          primaryClass={cs.CV}\
+          primaryClass={cs.CV}
         }
 
 
