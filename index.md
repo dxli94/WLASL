@@ -36,7 +36,7 @@ Please cite the [WLASL paper](https://arxiv.org/abs/1910.11006) if it helps your
 
 Contacts
 ------------------
-- [Dongxu Li](https://cecs.anu.edu.au/people/dongxu-li): [email](dongxu.li@anu.edu.au), [Google Scholar](https://scholar.google.com/citations?user=h5XtaUUAAAAJ&hl=en)
-- [Cristian Rodriguez Opazo](https://www.roboticvision.org/rv_person/cristian-rodriguez/): [email](cristian.rodriguez@anu.edu.au), [Google Scholar](https://scholar.google.com.au/citations?user=xTslnM0AAAAJ&hl=en)
-- [Xin Yu](https://sites.google.com/site/xinyuanu/): [email](xin.yu@anu.edu.au), [Google Scholar](https://scholar.google.com.au/citations?hl=en&user=oxdtuSEAAAAJ&view_op=list_works&sortby=pubdate)
-- [Hongdong Li](https://cecs.anu.edu.au/~hongdong): [email](hongdong.li@anu.edu.au), [Google Scholar](https://scholar.google.com.au/citations?user=Mq89JAcAAAAJ&hl=en).
+- [Dongxu Li](https://cecs.anu.edu.au/people/dongxu-li): [email](dongxu.li@anu.edu.au)
+- [Cristian Rodriguez Opazo](https://www.roboticvision.org/rv_person/cristian-rodriguez/): [email](cristian.rodriguez@anu.edu.au)
+- [Xin Yu](https://sites.google.com/site/xinyuanu/): [email](xin.yu@anu.edu.au)
+- [Hongdong Li](https://cecs.anu.edu.au/~hongdong): [email](hongdong.li@anu.edu.au)
