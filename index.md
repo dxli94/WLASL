@@ -39,4 +39,4 @@ Contacts
 - [Dongxu Li](https://cecs.anu.edu.au/people/dongxu-li): [email](dongxu.li@anu.edu.au)
 - [Cristian Rodriguez Opazo](https://www.roboticvision.org/rv_person/cristian-rodriguez/): [email](cristian.rodriguez@anu.edu.au)
 - [Xin Yu](https://sites.google.com/site/xinyuanu/): [email](xin.yu@anu.edu.au)
-- [Hongdong Li](https://cecs.anu.edu.au/~hongdong): [email](hongdong.li@anu.edu.au)
+- [Hongdong Li](http://users.cecs.anu.edu.au/~hongdong/): [email](hongdong.li@anu.edu.au)
