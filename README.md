@@ -75,7 +75,7 @@ Please cite the WLASL paper if it helps your research:
           year={2019},
           eprint={1910.11006},
           archivePrefix={arXiv},
-          primaryClass={cs.CV}\
+          primaryClass={cs.CV}
         }
 
 
