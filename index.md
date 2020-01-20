@@ -7,7 +7,7 @@ Please follow the [link](https://drive.google.com/open?id=1hCtNChuNpvA7ShdU_bGCl
 
 News
 ---------------
-* <span style="color: red"><b>NEW</b></span> Jan. 20, 2020: release of WLASL_v0.1!
+* <span style="color: red"><b>NEW</b></span> Jan. 20, 2020: <span style="font-weight:bold">release of WLASL_v0.1</span> ! Pretrained models will follow shortly.
 
 
 License
