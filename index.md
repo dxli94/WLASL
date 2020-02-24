@@ -5,7 +5,7 @@ Download
 ---------------
 Please follow the [link](https://drive.google.com/open?id=1hCtNChuNpvA7ShdU_bGClZsBmn4X7FfN) for downloading. We suggest reading [README](https://github.com/dxli94/WLASL/blob/master/README.md) before using the dataset.
 
-We strive to ensure our users have an easy access to WLASL. If you encounter any issue in downloading, e.g. invalid links, please [contact](dongxu.li@anu.edu.au) for assistance.
+We strive to ensure our users have an easy access to WLASL. If you encounter any issue in downloading, e.g. invalid links, please contact dongxu.li@anu.edu.au for assistance.
 
 News
 ---------------
@@ -38,7 +38,7 @@ Please cite the [WLASL paper](https://arxiv.org/abs/1910.11006) (Best Paper Hono
 
 Contacts
 ------------------
-- [Dongxu Li](https://cecs.anu.edu.au/people/dongxu-li): [email](dongxu.li@anu.edu.au)
-- [Cristian Rodriguez Opazo](https://www.roboticvision.org/rv_person/cristian-rodriguez/): [email](cristian.rodriguez@anu.edu.au)
-- [Xin Yu](https://sites.google.com/site/xinyuanu/): [email](xin.yu@anu.edu.au)
-- [Hongdong Li](http://users.cecs.anu.edu.au/~hongdong/): [email](hongdong.li@anu.edu.au)
+- [Dongxu Li](https://cecs.anu.edu.au/people/dongxu-li): dongxu.li@anu.edu.au
+- [Cristian Rodriguez Opazo](https://www.roboticvision.org/rv_person/cristian-rodriguez/): cristian.rodriguez@anu.edu.au
+- [Xin Yu](https://sites.google.com/site/xinyuanu/): xin.yu@anu.edu.au
+- [Hongdong Li](http://users.cecs.anu.edu.au/~hongdong/): hongdong.li@anu.edu.au
