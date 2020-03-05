@@ -1,5 +1,5 @@
 ## Welcome to WLASL Homepage
-WLASL is a large-scale video dataset for Word-Level American Sign Language (ASL) recognition, which features 2,000 common different words in ASL. We hope WLASL will facilitate the research in sign language understanding and eventually benefit the communication between deaf and hearing communities.
+WLASL is the <b>largest video dataset for Word-Level American Sign Language (ASL) recognition</b>, which features 2,000 common different words in ASL. We hope WLASL will facilitate the research in sign language understanding and eventually benefit the communication between deaf and hearing communities.
 
 Download
 ---------------
@@ -9,7 +9,8 @@ We strive to ensure our users have an easy access to WLASL. If you encounter any
 
 News
 ---------------
-* <span style="color: red"><b>NEW</b></span> Jan. 20, 2020: <span style="font-weight:bold">release of WLASL_v0.1</span> ! Pretrained models will follow shortly.
+* <span style="color: red"><b>NEW:</b></span> Mar. 5, 2020: Our work on <b>WLASL</b> dataset received WACV 2020 <span style="color: red"><b>Best Paper Honourable Mention (Applications)</b></span>, out of nearly 1,000 submissions!
+* Jan. 20, 2020: <span style="font-weight:bold">release of WLASL_v0.1</span> ! Pretrained models will follow shortly (or upon request for urgent use).
 
 
 License
@@ -24,21 +25,18 @@ All the WLASL data is intended for academic and computational use only. No comme
 Citation
 --------------
 
-Please cite the [WLASL paper](https://arxiv.org/abs/1910.11006) (Best Paper Honourable Mention, WACV 2020) if it helps your research:
+Please cite the [WLASL paper](https://arxiv.org/abs/1910.11006) if it helps your research:
 
-    @misc{li2019wordlevel,
-          title={Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison},
-          author={Dongxu Li and Cristian Rodriguez Opazo and Xin Yu and Hongdong Li},
-          year={2019},
-          eprint={1910.11006},
-          archivePrefix={arXiv},
-          primaryClass={cs.CV}
-        }
+    @inproceedings{li2020word,
+      title={Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison},
+      author={Li, Dongxu and Rodriguez, Cristian and Yu, Xin and Li, Hongdong},
+      booktitle={The IEEE Winter Conference on Applications of Computer Vision},
+      pages={1459--1469},
+      year={2020}
+    }
 
 
 Contacts
 ------------------
 - [Dongxu Li](https://cecs.anu.edu.au/people/dongxu-li): dongxu.li@anu.edu.au
-- [Cristian Rodriguez Opazo](https://www.roboticvision.org/rv_person/cristian-rodriguez/): cristian.rodriguez@anu.edu.au
-- [Xin Yu](https://sites.google.com/site/xinyuanu/): xin.yu@anu.edu.au
 - [Hongdong Li](http://users.cecs.anu.edu.au/~hongdong/): hongdong.li@anu.edu.au
