@@ -5,6 +5,14 @@ This repository contains the `WLASL` dataset described in "Word-level Deep Sign 
 
 Please visit the [project homepage](https://dxli94.github.io/WLASL/) for news update.
 
+Download
+-----------------
+```
+git clone https://github.com/dxli94/WLASL.git
+```
+Then unzip WLASL_vx.x.zip to local.
+
+
 File Description
 -----------------
 The repository contains following files:
@@ -69,19 +77,21 @@ Citation
 
 Please cite the WLASL paper if it helps your research:
 
-    @misc{li2019wordlevel,
-          title={Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison},
-          author={Dongxu Li and Cristian Rodriguez Opazo and Xin Yu and Hongdong Li},
-          year={2019},
-          eprint={1910.11006},
-          archivePrefix={arXiv},
-          primaryClass={cs.CV}
-        }
+     @inproceedings{li2020word,
+        title={Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison},
+        author={Li, Dongxu and Rodriguez, Cristian and Yu, Xin and Li, Hongdong},
+        booktitle={The IEEE Winter Conference on Applications of Computer Vision},
+        pages={1459--1469},
+        year={2020}
+     }
+
+
+Revision History
+--------------
+WLASLv0.2 (Mar. 11, 2020): updated URL links to for ASL signbank.
 
 
 Contacts
 ------------------
 - [Dongxu Li](https://cecs.anu.edu.au/people/dongxu-li): [email](dongxu.li@anu.edu.au)
-- [Cristian Rodriguez Opazo](https://www.roboticvision.org/rv_person/cristian-rodriguez/): [email](cristian.rodriguez@anu.edu.au)
-- [Xin Yu](https://sites.google.com/site/xinyuanu/): [email](xin.yu@anu.edu.au)
 - [Hongdong Li](https://cecs.anu.edu.au/~hongdong): [email](hongdong.li@anu.edu.au)
