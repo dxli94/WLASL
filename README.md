@@ -63,6 +63,20 @@ Constituting subsets
 As described in the paper, four subsets WLASL100, WLASL300, WLASL1000 and WLASL2000 are constructed by taking the top-K (k=100, 300, 1000 and 2000) glosses from the `WLASL_vx.x.json` file.
 
 
+FAQ
+---------------
+**File formats**
+
+Q1. Do you convert .swf files? / Do you convert everything to .mp4?
+
+A1. Generally depends on how you feed the videos into the model. But yes, in our implementations, we use ffmpeg to convert all files into .mp4 format to a unified data io.
+
+**Connection Error**
+
+Q2. Connection forcibly closed by remote server?
+
+A2. First, manually access the URL and ensure it is valid or not. If it is invalid, please report to us via email and we will look into it. Otherwise, it is likely you are requesting too frequently. Try adding pauses between your requests to avoid the issue.
+
 License
 ---------------
 Licensed under the Computational Use of Data Agreement (C-UDA). Plaese refer to `C-UDA-1.0.pdf` for more information.
