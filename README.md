@@ -122,8 +122,8 @@ Please cite the WLASL paper if it helps your research:
 
 Revision History
 --------------
-WLASLv0.3 (Mar. 16, 2020): updated dead URL links. Added a script for downloading non-YouTube videos.
-WLASLv0.2 (Mar. 11, 2020): updated URL links for ASL signbank.
+* WLASLv0.3 (Mar. 16, 2020): updated dead URL links. Added a script for downloading non-YouTube videos.
+* WLASLv0.2 (Mar. 11, 2020): updated URL links for ASL signbank.
 
 
 Contacts
