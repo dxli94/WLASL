@@ -12,6 +12,12 @@ git clone https://github.com/dxli94/WLASL.git
 ```
 Then unzip WLASL_vx.x.zip to local.
 
+```
+python video_downloader.py
+```
+should get you all of videos, except for those from YouTube.
+
+We are adding support for YouTube videos at the moment.
 
 File Description
 -----------------
@@ -77,6 +83,20 @@ Q2. Connection forcibly closed by remote server?
 
 A2. First, manually access the URL and ensure it is valid or not. If it is invalid, please report to us via email and we will look into it. Otherwise, it is likely you are requesting too frequently. Try adding pauses between your requests to avoid the issue.
 
+**Missing Videos**
+
+Q3. I encountered 404 error. / Downloader is not able to download certain videos.
+
+A3. If you see a lot of broken URLs, please see Q2. If you have a dozens of broken URLs, please first manually check whether they are valid in your browser. Then you can either choose to manually save the videos or report to us for invalid cases. If you have only a few of videos missing because of deprecated URLs or connections, you may request for the missing ones by email to dongxu.li@anu.edu.au.
+
+
+TODO
+--------------
+1. Adding a download script for YouTube videos.
+2. Adding a preprocess script.
+3. Release training models.
+
+
 License
 ---------------
 Licensed under the Computational Use of Data Agreement (C-UDA). Plaese refer to `C-UDA-1.0.pdf` for more information.
@@ -102,10 +122,13 @@ Please cite the WLASL paper if it helps your research:
 
 Revision History
 --------------
-WLASLv0.2 (Mar. 11, 2020): updated URL links to for ASL signbank.
+WLASLv0.3 (Mar. 16, 2020): updated dead URL links. Added a script for downloading non-YouTube videos.
+WLASLv0.2 (Mar. 11, 2020): updated URL links for ASL signbank.
 
 
 Contacts
 ------------------
 - [Dongxu Li](https://cecs.anu.edu.au/people/dongxu-li): [email](dongxu.li@anu.edu.au)
 - [Hongdong Li](https://cecs.anu.edu.au/~hongdong): [email](hongdong.li@anu.edu.au)
+
+Please send queries with your institude mail address.

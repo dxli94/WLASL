@@ -9,7 +9,8 @@ We strive to ensure our users have an easy access to WLASL. If you encounter any
 
 News
 ---------------
-* <span style="color: red"><b>NEW:</b></span> Mar. 11, 2020: <span style="font-weight:bold">release of WLASL_v0.2</span>. Updated expired links.
+* <span style="color: red"><b>NEW:</b></span> Mar.16,2020 <span style="font-weight:bold">release of WLASL_v0.3</span>. Now you can download most WLASL videos by pressing a single button.
+* Mar. 11, 2020: release of WLASL_v0.2. Updated expired links.
 * Mar. 5, 2020: Our work on <b>WLASL</b> dataset received WACV 2020 <span style="color: red"><b>Best Paper Honourable Mention (Applications)</b></span>, out of nearly 1,000 submissions!
 * Jan. 20, 2020: release of WLASL_v0.1! Pretrained models will follow shortly (or upon request for urgent use).
 
