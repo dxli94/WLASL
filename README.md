@@ -7,17 +7,18 @@ Please visit the [project homepage](https://dxli94.github.io/WLASL/) for news up
 
 Download
 -----------------
+1. Download repo.
 ```
 git clone https://github.com/dxli94/WLASL.git
 ```
-Then unzip WLASL_vx.x.zip to local.
 
+2. Install [youtube-dl](https://github.com/ytdl-org/youtube-dl#installation) for downloading YouTube videos.
+3. Download raw videos.
 ```
+cd start_kit
 python video_downloader.py
 ```
-should get you all of videos, except for those from YouTube.
-
-We are adding support for YouTube videos at the moment.
+4. Extract video samples from raw videos. (We are going to release a script for this as well, soon.)
 
 File Description
 -----------------
