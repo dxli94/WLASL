@@ -22,6 +22,7 @@ python video_downloader.py
 ```
 python preprocess.py
 ```
+5. You should expect to see video samples under directory ```videos/```.
 
 Requesting Missing Videos
 -----------------
