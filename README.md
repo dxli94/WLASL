@@ -27,7 +27,7 @@ python preprocess.py
 Requesting Missing Videos
 -----------------
 
-1.  Videos can dissapear over time due to expired urls, so you may find the videos you downloaded incomplete, we provide the following solution for you to have access to missing videos.
+Videos can dissapear over time due to expired urls, so you may find the videos you downloaded incomplete, we provide the following solution for you to have access to missing videos.
 
  (a) Run
 ```
@@ -36,6 +36,7 @@ python find_missing.py
 to generate text file missing.txt containing missing video IDs.
 
  (b)  Submit a video request by agreeing to terms of use at:  https://docs.google.com/forms/d/e/1FAIpQLSc3yHyAranhpkC9ur_Z-Gu5gS5M0WnKtHV07Vo6eL6nZHzruw/viewform?usp=sf_link. You will get links to the missing videos within 72 hours.
+
 File Description
 -----------------
 The repository contains following files:
