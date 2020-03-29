@@ -9,7 +9,7 @@ We strive to ensure our users have an easy access to WLASL. If you encounter any
 
 News
 ---------------
-* Mar.29,2020 <span style="color: red"><b>NEW:</b></span> Now you can download all the WLASL videos by pressing a single button. Please check out our repo.
+* <span style="color: red"><b>NEW:</b></span> Mar.29,2020  Now you can download all the WLASL videos by pressing a single button. Please check out our repo.
 * Mar.16,2020 <span style="font-weight:bold">release of WLASL_v0.3</span>.
 * Mar. 11, 2020: release of WLASL_v0.2. Updated expired links.
 * Mar. 5, 2020: Our work on <b>WLASL</b> dataset received WACV 2020 <span style="color: red"><b>Best Paper Honourable Mention (Applications)</b></span>, out of nearly 1,000 submissions!
@@ -40,12 +40,12 @@ Please cite the [WLASL paper](https://arxiv.org/abs/1910.11006) if it helps your
 
 Please consider citing our work on WLASL.
 
-        @article{li2020transferring,
-          title={Transferring Cross-domain Knowledge for Video Sign Language Recognition},
-          author={Li, Dongxu and Yu, Xin and Xu, Chenchen and Petersson, Lars and Li, Hongdong},
-          journal={arXiv preprint arXiv:2003.03703},
-          year={2020}
-        }
+    @article{li2020transferring,
+      title={Transferring Cross-domain Knowledge for Video Sign Language Recognition},
+      author={Li, Dongxu and Yu, Xin and Xu, Chenchen and Petersson, Lars and Li, Hongdong},
+      journal={arXiv preprint arXiv:2003.03703},
+      year={2020}
+    }
 
 
 

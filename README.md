@@ -5,6 +5,8 @@ This repository contains the `WLASL` dataset described in "Word-level Deep Sign 
 
 Please visit the [project homepage](https://dxli94.github.io/WLASL/) for news update.
 
+Please **star the repo** to help with the visibility if you find it useful.
+
 Download
 -----------------
 1. Download repo.
