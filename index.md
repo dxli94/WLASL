@@ -37,6 +37,16 @@ Please cite the [WLASL paper](https://arxiv.org/abs/1910.11006) if it helps your
       year={2020}
     }
 
+Please consider citing our work on WLASL.
+
+        @article{li2020transferring,
+          title={Transferring Cross-domain Knowledge for Video Sign Language Recognition},
+          author={Li, Dongxu and Yu, Xin and Xu, Chenchen and Petersson, Lars and Li, Hongdong},
+          journal={arXiv preprint arXiv:2003.03703},
+          year={2020}
+        }
+
+
 
 Contacts
 ------------------

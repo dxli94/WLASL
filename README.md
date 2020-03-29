@@ -18,8 +18,23 @@ git clone https://github.com/dxli94/WLASL.git
 cd start_kit
 python video_downloader.py
 ```
-4. Extract video samples from raw videos. (We are going to release a script for this as well, soon.)
+4. Extract video samples from raw videos.
+```
+python preprocess.py
+```
 
+Requesting Missing Videos
+-----------------
+
+1.  Videos can dissapear over time due to expired urls, so you may find the videos you downloaded incomplete, we provide the following solution for you to have access to missing videos.
+
+ (a) Run
+```
+python find_missing.py
+```
+to generate text file missing.txt containing missing video IDs.
+
+ (b)  Submit a video request by agreeing to terms of use at:  https://docs.google.com/forms/d/e/1FAIpQLSc3yHyAranhpkC9ur_Z-Gu5gS5M0WnKtHV07Vo6eL6nZHzruw/viewform?usp=sf_link. You will get links to the missing videos within 72 hours.
 File Description
 -----------------
 The repository contains following files:
@@ -93,9 +108,8 @@ A3. If you see a lot of broken URLs, please see Q2. If you have a dozens of brok
 
 TODO
 --------------
-1. Adding a download script for YouTube videos.
-2. Adding a preprocess script.
-3. Release training models.
+1. Adding a preprocess script.
+2. Release training models.
 
 
 License
@@ -119,6 +133,15 @@ Please cite the WLASL paper if it helps your research:
         pages={1459--1469},
         year={2020}
      }
+
+Please consider citing our work on WLASL.
+
+    @article{li2020transferring,
+      title={Transferring Cross-domain Knowledge for Video Sign Language Recognition},
+      author={Li, Dongxu and Yu, Xin and Xu, Chenchen and Petersson, Lars and Li, Hongdong},
+      journal={arXiv preprint arXiv:2003.03703},
+      year={2020}
+    }
 
 
 Revision History
