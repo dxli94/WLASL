@@ -150,6 +150,7 @@ Please consider citing our work on WLASL.
 
 Revision History
 --------------
+* WLASLv0.3 (Apr. 16, 2019): updated dead URL links on deafASL.
 * WLASLv0.3 (Mar. 16, 2020): updated dead URL links. Added a script for downloading non-YouTube videos.
 * WLASLv0.2 (Mar. 11, 2020): updated URL links for ASL signbank.
 
