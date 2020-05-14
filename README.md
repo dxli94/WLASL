@@ -89,6 +89,11 @@ Constituting subsets
 As described in the paper, four subsets WLASL100, WLASL300, WLASL1000 and WLASL2000 are constructed by taking the top-K (k=100, 300, 1000 and 2000) glosses from the `WLASL_vx.x.json` file.
 
 
+Training
+---------------
+We plan to publish the model soon. For urgent use, please temporarily refer to [Google Drive](https://drive.google.com/file/d/1vktQxvRHNS9psOQVKx5-dsERlmiYFRXC/view). Note you may need to preprocess videos and re-train the model on yourself.
+
+
 FAQ
 ---------------
 **File formats**
