@@ -1,6 +1,6 @@
 import json
 
-file_path = 'WLASL_v0.1.json'
+file_path = 'WLASL_v0.3.json'
 
 with open(file_path) as ipf:
     content = json.load(ipf)
