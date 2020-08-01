@@ -29,7 +29,7 @@ python preprocess.py
 Requesting Missing Videos
 -----------------
 
-Videos can dissapear over time due to expired urls, so you may find the videos you downloaded incomplete, we provide the following solution for you to have access to missing videos.
+Videos can dissapear over time due to expired urls, so you may find the downloaded videos incomplete. In this regard, we provide the following solution for you to have access to missing videos.
 
  (a) Run
 ```
@@ -91,8 +91,7 @@ As described in the paper, four subsets WLASL100, WLASL300, WLASL1000 and WLASL2
 
 Training
 ---------------
-We plan to publish the model soon. For urgent use, please temporarily refer to [Google Drive](https://drive.google.com/file/d/1vktQxvRHNS9psOQVKx5-dsERlmiYFRXC/view). Note you may need to preprocess videos and re-train the model on yourself.
-
+Please refer to [Google Drive](https://drive.google.com/file/d/1vktQxvRHNS9psOQVKx5-dsERlmiYFRXC/view).
 
 FAQ
 ---------------
@@ -145,11 +144,12 @@ Please cite the WLASL paper if it helps your research:
 
 Please consider citing our work on WLASL.
 
-    @article{li2020transferring,
-      title={Transferring Cross-domain Knowledge for Video Sign Language Recognition},
-      author={Li, Dongxu and Yu, Xin and Xu, Chenchen and Petersson, Lars and Li, Hongdong},
-      journal={arXiv preprint arXiv:2003.03703},
-      year={2020}
+    @inproceedings{li2020transferring,
+     title={Transferring cross-domain knowledge for video sign language recognition},
+     author={Li, Dongxu and Yu, Xin and Xu, Chenchen and Petersson, Lars and Li, Hongdong},
+     booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+     pages={6205--6214},
+     year={2020}
     }
 
 
