@@ -14,7 +14,7 @@ Download
 git clone https://github.com/dxli94/WLASL.git
 ```
 
-2. Install [youtube-dl](https://github.com/ytdl-org/youtube-dl#installation) for downloading YouTube videos.
+2. Install [youtube-dl](https://yt-dl.org/download.html) for downloading YouTube videos.
 3. Download raw videos.
 ```
 cd start_kit
