@@ -3,3 +3,9 @@ start_kit/missing.txt
 start_kit/raw_videos/
 start_kit/raw_videos_mp4/
 start_kit/videos/
+
+*/__pycache__
+code/I3D/archived/
+*.pt
+
+*.zip

@@ -115,32 +115,20 @@ By default the script tests WLASL2000. To test other subsets, please change line
 
 A previous release can be found [here](https://drive.google.com/file/d/1vktQxvRHNS9psOQVKx5-dsERlmiYFRXC/view).
 
-FAQ
----------------
-**File formats**
 
-Q1. Do you convert .swf files? / Do you convert everything to .mp4?
+**Pose-TGCN**
 
-A1. Generally depends on how you feed the videos into the model. But yes, in our implementations, we use ffmpeg to convert all files into .mp4 format to a unified data io.
+Download [splits file](https://drive.google.com/file/d/16CWkbMLyEbdBkrxAPaxSXFP_aSxKzNN4/view?usp=sharing) and [body keypoints](https://drive.google.com/file/d/1k5mfrc2g4ZEzzNjW6CEVjLvNTZcmPanB/view?usp=sharing). Unzip them into ```WLASL/data```. You should see ```WLASL/data/splits``` and ```WLASL/data/pose_per_individual_videos``` folders.
 
-**Connection Error**
+To train the model, modify paths in ```train_tgcn.py main()``` to point to WLASL root.
+```
+python train_tgcn.py
+```
 
-Q2. Connection forcibly closed by remote server?
-
-A2. First, manually access the URL and ensure it is valid or not. If it is invalid, please report to us via email and we will look into it. Otherwise, it is likely you are requesting too frequently. Try adding pauses between your requests to avoid the issue.
-
-**Missing Videos**
-
-Q3. I encountered 404 error. / Downloader is not able to download certain videos.
-
-A3. If you see a lot of broken URLs, please see Q2. If you have a dozens of broken URLs, please first manually check whether they are valid in your browser. Then you can either choose to manually save the videos or report to us for invalid cases. If you have only a few of videos missing because of deprecated URLs or connections, you may request for the missing ones by email to dongxu.li@anu.edu.au.
-
-
-TODO
---------------
-1. Adding a preprocess script.
-2. Release training models.
-
+To test the model, first download [pre-trained models](https://drive.google.com/file/d/1dzvocsaylRsjqaY4r_lyRihPZn0I6AA_/view?usp=sharing) and unzip to ```code/TGCN/archived```. Then run
+```
+python test_tgcn.py
+```
 
 License
 ---------------
@@ -149,6 +137,8 @@ Licensed under the Computational Use of Data Agreement (C-UDA). Plaese refer to 
 Disclaimer
 ---------------
 All the WLASL data is intended for academic and computational use only. No commercial usage is allowed. We highly respect copyright and privacy. If you find WLASL violates your rights, please contact us.
+
+
 
 
 Citation
@@ -174,17 +164,18 @@ Please consider citing our work on WLASL.
      year={2020}
     }
 
+Other works you might be interested in.
+
+    @article{li2020tspnet,
+     title={TSPNet: Hierarchical Feature Learning via Temporal Semantic Pyramid for Sign Language Translation},
+     author={Li, Dongxu and Xu, Chenchen and Yu, Xin and Zhang, Kaihao and Swift, Benjamin and Suominen, Hanna and Li, Hongdong},
+     journal={arXiv preprint arXiv:2010.05468},
+     year={2020}
+    }
+
 
 Revision History
 --------------
 * WLASLv0.3 (Apr. 16, 2019): updated dead URL links on deafASL.
 * WLASLv0.3 (Mar. 16, 2020): updated dead URL links. Added a script for downloading non-YouTube videos.
 * WLASLv0.2 (Mar. 11, 2020): updated URL links for ASL signbank.
-
-
-Contacts
-------------------
-- [Dongxu Li](https://cecs.anu.edu.au/people/dongxu-li): [email](dongxu.li@anu.edu.au)
-- [Hongdong Li](https://cecs.anu.edu.au/~hongdong): [email](hongdong.li@anu.edu.au)
-
-Please send queries with your institude mail address.
