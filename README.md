@@ -91,7 +91,7 @@ As described in the paper, four subsets WLASL100, WLASL300, WLASL1000 and WLASL2
 
 Training and Testing
 ---------------
-** I3D **
+**I3D**
 
 ```
 cd WLASL
