@@ -89,9 +89,31 @@ Constituting subsets
 As described in the paper, four subsets WLASL100, WLASL300, WLASL1000 and WLASL2000 are constructed by taking the top-K (k=100, 300, 1000 and 2000) glosses from the `WLASL_vx.x.json` file.
 
 
-Training
+Training and Testing
 ---------------
-Please refer to [Google Drive](https://drive.google.com/file/d/1vktQxvRHNS9psOQVKx5-dsERlmiYFRXC/view).
+** I3D **
+
+```
+cd WLASL
+mkdir data
+```
+put all the videos under ```data/```.
+```
+cp WLASL2000 -r data/
+```
+To train models, first download [I3D weights pre-trained Kinetics](https://drive.google.com/file/d/1JgTRHGBRCHyHRT_rAF0fOjnfiFefXkEd/view?usp=sharing) and unzip it. You should see a folder ```I3D/weights/```.
+
+```
+python train_i3d.py
+```
+To test pre-trained models, first download [WLASL pre-trained weights](https://drive.google.com/file/d/1jALimVOB69ifYkeT0Pe297S1z4U3jC48/view?usp=sharing) and unzip it. You should see a folder ```I3D/archived/```.
+
+```
+python test_i3d.py
+```
+By default the script tests WLASL2000. To test other subsets, please change line 264, 270 in ```test_i3d.py``` properly.
+
+A previous release can be found [here](https://drive.google.com/file/d/1vktQxvRHNS9psOQVKx5-dsERlmiYFRXC/view).
 
 FAQ
 ---------------
