@@ -7,14 +7,14 @@ Please visit the [project homepage](https://dxli94.github.io/WLASL/) for news up
 
 Please **star the repo** to help with the visibility if you find it useful.
 
-Download
+Download Original Videos
 -----------------
 1. Download repo.
 ```
 git clone https://github.com/dxli94/WLASL.git
 ```
 
-2. Install [youtube-dl](https://yt-dl.org/download.html) for downloading YouTube videos.
+2. Install [youtube-dl](https://github.com/ytdl-org/youtube-dl) for downloading YouTube videos.
 3. Download raw videos.
 ```
 cd start_kit
@@ -26,10 +26,12 @@ python preprocess.py
 ```
 5. You should expect to see video samples under directory ```videos/```.
 
-Requesting Missing Videos
+Requesting Missing / Pre-processed Videos
 -----------------
 
 Videos can dissapear over time due to expired urls, so you may find the downloaded videos incomplete. In this regard, we provide the following solution for you to have access to missing videos.
+
+We also provide pre-processed videos for the full WLASL dataset on request, which saves troubles of video processing for you.
 
  (a) Run
 ```
@@ -172,10 +174,3 @@ Other works you might be interested in.
      journal={arXiv preprint arXiv:2010.05468},
      year={2020}
     }
-
-
-Revision History
---------------
-* WLASLv0.3 (Apr. 16, 2019): updated dead URL links on deafASL.
-* WLASLv0.3 (Mar. 16, 2020): updated dead URL links. Added a script for downloading non-YouTube videos.
-* WLASLv0.2 (Mar. 11, 2020): updated URL links for ASL signbank.
