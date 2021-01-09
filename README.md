@@ -3,8 +3,6 @@ WLASL: A large-scale dataset for Word-Level American Sign Language
 
 This repository contains the `WLASL` dataset described in "Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison".
 
-<iframe width="823" height="310" src="https://www.youtube.com/embed/wG-uaee4mJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Please visit the [project homepage](https://dxli94.github.io/WLASL/) for news update.
 
 Please **star the repo** to help with the visibility if you find it useful.
