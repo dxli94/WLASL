@@ -1,6 +1,8 @@
 ## Welcome to WLASL Homepage
 WLASL is the <b>largest video dataset for Word-Level American Sign Language (ASL) recognition</b>, which features 2,000 common different words in ASL. We hope WLASL will facilitate the research in sign language understanding and eventually benefit the communication between deaf and hearing communities.
 
+<iframe width="823" height="310" src="https://www.youtube.com/embed/wG-uaee4mJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Download
 ---------------
 Please clone our [repository](https://github.com/dxli94/WLASL) for downloading. We suggest reading [README](https://github.com/dxli94/WLASL/blob/master/README.md) before using the dataset.
