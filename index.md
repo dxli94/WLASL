@@ -11,7 +11,8 @@ We strive to ensure our users have an easy access to WLASL. If you encounter any
 
 News
 ---------------
-* <span style="color: red"><b>NEW:</b></span> Mar.29,2020  Now you can download all the WLASL videos by pressing a single button. Please check out our repo.
+* <span style="color: red"><b>NEW:</b></span> Pre-trained I3D and Pose-TGCN models and training code all released!
+* Mar.29,2020  Now you can download all the WLASL videos by pressing a single button. Please check out our repo.
 * Mar.16,2020 <span style="font-weight:bold">release of WLASL_v0.3</span>.
 * Mar. 11, 2020: release of WLASL_v0.2. Updated expired links.
 * Mar. 5, 2020: Our work on <b>WLASL</b> dataset received WACV 2020 <span style="color: red"><b>Best Paper Honourable Mention (Applications)</b></span>, out of nearly 1,000 submissions!
@@ -31,7 +32,7 @@ Citation
 --------------
 
 Please cite the [WLASL paper](https://arxiv.org/abs/1910.11006) if it helps your research:
-
+```bibtex
     @inproceedings{li2020word,
       title={Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison},
       author={Li, Dongxu and Rodriguez, Cristian and Yu, Xin and Li, Hongdong},
@@ -39,16 +40,27 @@ Please cite the [WLASL paper](https://arxiv.org/abs/1910.11006) if it helps your
       pages={1459--1469},
       year={2020}
     }
-
-Please consider citing our work on WLASL.
-
-    @article{li2020transferring,
-      title={Transferring Cross-domain Knowledge for Video Sign Language Recognition},
-      author={Li, Dongxu and Yu, Xin and Xu, Chenchen and Petersson, Lars and Li, Hongdong},
-      journal={arXiv preprint arXiv:2003.03703},
-      year={2020}
-    }
-
+```
+and our CVPR 2020 [Best Paper Finalist paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Transferring_Cross-Domain_Knowledge_for_Video_Sign_Language_Recognition_CVPR_2020_paper.pdf)
+```bibtex
+@inproceedings{li2020transferring,
+  title={Transferring cross-domain knowledge for video sign language recognition},
+  author={Li, Dongxu and Yu, Xin and Xu, Chenchen and Petersson, Lars and Li, Hongdong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={6205--6214},
+  year={2020}
+}
+```
+Other works using WLASL dataset you might also be interested:
+```bibtex
+@inproceedings{li2020tspnet,
+	title        = {TSPNet: Hierarchical Feature Learning via Temporal Semantic Pyramid for Sign Language Translation},
+	author       = {Li, Dongxu and Xu, Chenchen and Yu, Xin and Zhang, Kaihao and Swift, Benjamin and Suominen, Hanna and Li, Hongdong},
+	year         = 2020,
+	booktitle    = {Advances in Neural Information Processing Systems},
+	volume       = 33
+}
+```
 
 
 Contacts
