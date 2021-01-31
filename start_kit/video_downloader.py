@@ -1,151 +1,141 @@
 import os
+import subprocess
+import glob
 import json
 import time
 import sys
 import urllib.request
+import re
 from multiprocessing.dummy import Pool
 
 import random
 
 import logging
-logging.basicConfig(filename='download_{}.log'.format(int(time.time())), filemode='w', level=logging.DEBUG)
+
+logging.basicConfig(
+    filename="videoDownloader.log", filemode="w", level=logging.DEBUG
+)
 logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 
 
-def request_video(url, referer=''):
-    user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
+class videoDownloader:
+    wordCounts = {}
 
-    headers = {'User-Agent': user_agent,
-               }
-    
-    if referer:
-        headers['Referer'] = referer
+    def __init__(self, idxf="WLASL_v0.3.json", vd="data", n=1, m=2000000):
+        self.wordCounts = {}
+        self.indexFile = idxf
+        self.max = m
+        self.videoDir = vd
+        if not os.path.exists(self.videoDir):
+            os.mkdir(self.videoDir)
+        self.size = self.updateSize()
 
-    request = urllib.request.Request(url, None, headers)  # The assembled request
+    def updateSize(self):
+        self.size = int(
+            subprocess.check_output(["du", "-ks", self.videoDir])
+            .split()[0]
+            .decode("utf-8")
+        )
+        return self.size
 
-    logging.info('Requesting {}'.format(url))
-    response = urllib.request.urlopen(request)
-    data = response.read()  # The data you need
+    def request_video(self, url, referer=""):
+        user_agent = (
+            "Mozilla/5.0"
+            "(Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7)"
+            "Gecko/2009021910 Firefox/3.0.7"
+        )
 
-    return data
+        headers = {
+            "User-Agent": user_agent,
+        }
 
+        if referer:
+            headers["Referer"] = referer
 
-def save_video(data, saveto):
-    with open(saveto, 'wb+') as f:
-        f.write(data)
+        # The assembled request
+        request = urllib.request.Request(url, None, headers)
 
-    # please be nice to the host - take pauses and avoid spamming
-    time.sleep(random.uniform(0.5, 1.5))
+        logging.info("Requesting {}".format(url))
+        response = urllib.request.urlopen(request)
+        data = response.read()  # The data you need
+        urllib.request.urlopen
 
+        return data
 
-def download_youtube(url, dirname, video_id):
-    raise NotImplementedError("Urllib cannot deal with YouTube links.")
+    def dlPass(self, video_id):
+        logging.info(f"Download Successful\t-\t{video_id}")
 
+    def dlFail(self, video_id):
+        logging.error(f"Download Failed\t\t-\t{video_id}")
 
-def download_aslpro(url, dirname, video_id):
-    saveto = os.path.join(dirname, '{}.swf'.format(video_id))
-    if os.path.exists(saveto):
-        logging.info('{} exists at {}'.format(video_id, saveto))
-        return 
-
-    data = request_video(url, referer='http://www.aslpro.com/cgi-bin/aslpro/aslpro.cgi')
-    save_video(data, saveto)
-
-
-def download_others(url, dirname, video_id):
-    saveto = os.path.join(dirname, '{}.mp4'.format(video_id))
-    if os.path.exists(saveto):
-        logging.info('{} exists at {}'.format(video_id, saveto))
-        return 
-    
-    data = request_video(url)
-    save_video(data, saveto)
-
-
-def select_download_method(url):
-    if 'aslpro' in url:
-        return download_aslpro
-    elif 'youtube' in url or 'youtu.be' in url:
-        return download_youtube
-    else:
-        return download_others
-
-
-def download_nonyt_videos(indexfile, saveto='raw_videos'):
-    content = json.load(open(indexfile))
-
-    if not os.path.exists(saveto):
-        os.mkdir(saveto)
-
-    for entry in content:
-        gloss = entry['gloss']
-        instances = entry['instances']
-
-        for inst in instances:
-            video_url = inst['url']
-            video_id = inst['video_id']
-            
-            logging.info('gloss: {}, video: {}.'.format(gloss, video_id))
-
-            download_method = select_download_method(video_url)    
-            
-            if download_method == download_youtube:
-                logging.warning('Skipping YouTube video {}'.format(video_id))
-                continue
-
-            try:
-                download_method(video_url, saveto, video_id)
-            except Exception as e:
-                logging.error('Unsuccessful downloading - video {}'.format(video_id))
-
-
-def check_youtube_dl_version():
-    ver = os.popen('youtube-dl --version').read()
-
-    assert ver, "youtube-dl cannot be found in PATH. Please verify your installation."
-    assert ver >= '2020.03.08', "Please update youtube-dl to newest version."
-
-
-def download_yt_videos(indexfile, saveto='raw_videos'):
-    content = json.load(open(indexfile))
-    
-    if not os.path.exists(saveto):
-        os.mkdir(saveto)
-    
-    for entry in content:
-        gloss = entry['gloss']
-        instances = entry['instances']
-
-        for inst in instances:
-            video_url = inst['url']
-            video_id = inst['video_id']
-
-            if 'youtube' not in video_url and 'youtu.be' not in video_url:
-                continue
-
-            if os.path.exists(os.path.join(saveto, video_url[-11:] + '.mp4')) or os.path.exists(os.path.join(saveto, video_url[-11:] + '.mkv')):
-                logging.info('YouTube videos {} already exists.'.format(video_url))
-                continue
-            else:
-                cmd = "youtube-dl \"{}\" -o \"{}%(id)s.%(ext)s\""
-                cmd = cmd.format(video_url, saveto + os.path.sep)
-
-                rv = os.system(cmd)
-                
-                if not rv:
-                    logging.info('Finish downloading youtube video url {}'.format(video_url))
+    def download(self, inst, gloss):
+        rv = False
+        saveto = os.path.join(self.videoDir, gloss, inst["video_id"])
+        if glob.glob(f"{saveto}.*"):
+            logging.info(f"{inst['video_id']} exists at {saveto} - Skipping")
+            rv = True
+        else:
+            if re.search(r"youtu\.?be", inst["url"]):
+                status = os.system(
+                    f"youtube-dl \"{inst['url']}\" -o \"{saveto}.yt.%(ext)s\""
+                )
+                if status == 0:
+                    self.dlPass(inst["video_id"])
+                    rv = True
                 else:
-                    logging.error('Unsuccessful downloading - youtube video url {}'.format(video_url))
+                    rv = False
+                    self.dlFail(inst["video_id"])
+            else:
+                if "aslpro" in inst["url"]:
+                    saveto = f"{saveto}.swf"
+                    ref = "http://www.aslpro.com/cgi-bin/aslpro/aslpro.cgi"
+                else:
+                    saveto = f"{saveto}.mp4"
+                    ref = ""
+                dat = self.request_video(inst["url"], referer=ref)
+                if dat:
+                    with open(saveto, "wb+") as f:
+                        f.write(dat)
+                        self.dlPass(inst["video_id"])
+                        rv = True
+                else:
+                    self.dlFail(inst["video_id"])
+            # please be nice to the host - take pauses and avoid spamming
+            time.sleep(random.uniform(0.3, 0.7))
+        return rv
 
-                # please be nice to the host - take pauses and avoid spamming
-                time.sleep(random.uniform(1.0, 1.5))
-    
+    def main(self):
+        idx = json.load(open(self.indexFile))
+        idx = sorted(idx, key=lambda x: (len(x["instances"])), reverse=True)
 
-if __name__ == '__main__':
-    logging.info('Start downloading non-youtube videos.')
-    download_nonyt_videos('WLASL_v0.3.json')
+        if not os.path.exists(self.videoDir):
+            os.mkdir(self.videoDir)
 
-    check_youtube_dl_version()
-    logging.info('Start downloading youtube videos.')
-    download_yt_videos('WLASL_v0.3.json')
+        for i in idx:
+            if not os.path.exists(os.path.join(self.videoDir, i["gloss"])):
+                os.mkdir(os.path.join(self.videoDir, i["gloss"]))
+            if i["gloss"] not in self.wordCounts:
+                self.wordCounts[i["gloss"]] = 0
+            if self.updateSize() >= self.max:
+                logging.info("Max size reached")
+                break
+            for j in i["instances"]:
+                if self.updateSize() >= self.max:
+                    break
+                logging.info(
+                    f">>>GLOSS: {i['gloss']}"
+                    f"\tvideo: {j['video_id']}"
+                    f"\tcount: {self.wordCounts[i['gloss']]}"
+                )
+                try:
+                    if self.download(j, i["gloss"]):
+                        self.wordCounts[i["gloss"]] = (
+                            self.wordCounts[i["gloss"]] + 1
+                        )
+                except Exception as e:
+                    logging.error(f"ERROR - {j['video_id']}: {e}")
 
+
+if __name__ == "__main__":
+    vd = videoDownloader()
+    vd.main()
