@@ -24,7 +24,7 @@ do
     fi
 
     echo "${i} / ${total}, ${filename}"
-    
+
     if [ ${extension} != "mp4" ];
     then
 	    ffmpeg -loglevel panic -i ${src_file} -vf pad="width=ceil(iw/2)*2:height=ceil(ih/2)*2" ${dst_file}
