@@ -1,4 +1,4 @@
-WLASL: A large-scale dataset for Word-Level American Sign Language
+WLASL: A large-scale dataset for Word-Level American Sign Language (WACV 20' Best Paper Honourable Mention)
 ============================================================================================
 
 This repository contains the `WLASL` dataset described in "Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison".
