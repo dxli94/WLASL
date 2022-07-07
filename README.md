@@ -174,3 +174,8 @@ Other works you might be interested in.
      journal={arXiv preprint arXiv:2010.05468},
      year={2020}
     }
+
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/dxli94/WLASL.svg)](https://starchart.cc/dxli94/WLASL)
