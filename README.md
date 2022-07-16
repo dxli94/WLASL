@@ -168,24 +168,24 @@ Please consider citing our work on WLASL.
 
 Other works you might be interested in.
 
-@article{li2020tspnet,
-  title={Tspnet: Hierarchical feature learning via temporal semantic pyramid for sign language translation},
-  author={Li, Dongxu and Xu, Chenchen and Yu, Xin and Zhang, Kaihao and Swift, Benjamin and Suominen, Hanna and Li, Hongdong},
-  journal={Advances in Neural Information Processing Systems},
-  volume={33},
-  pages={12034--12045},
-  year={2020}
-}
+    @article{li2020tspnet,
+      title={Tspnet: Hierarchical feature learning via temporal semantic pyramid for sign language translation},
+      author={Li, Dongxu and Xu, Chenchen and Yu, Xin and Zhang, Kaihao and Swift, Benjamin and Suominen, Hanna and Li, Hongdong},
+      journal={Advances in Neural Information Processing Systems},
+      volume={33},
+      pages={12034--12045},
+      year={2020}
+    }
 
-@inproceedings{li2022transcribing,
-  title={Transcribing natural languages for the deaf via neural editing programs},
-  author={Li, Dongxu and Xu, Chenchen and Liu, Liu and Zhong, Yiran and Wang, Rong and Petersson, Lars and Li, Hongdong},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume={36},
-  number={11},
-  pages={11991--11999},
-  year={2022}
-}
+    @inproceedings{li2022transcribing,
+      title={Transcribing natural languages for the deaf via neural editing programs},
+      author={Li, Dongxu and Xu, Chenchen and Liu, Liu and Zhong, Yiran and Wang, Rong and Petersson, Lars and Li, Hongdong},
+      booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+      volume={36},
+      number={11},
+      pages={11991--11999},
+      year={2022}
+    }
 
 
 ## Stargazers over time
