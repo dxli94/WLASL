@@ -39,7 +39,7 @@ python find_missing.py
 ```
 to generate text file missing.txt containing missing video IDs.
 
- (b)  Submit a video request by agreeing to terms of use at:  https://docs.google.com/forms/d/e/1FAIpQLSc3yHyAranhpkC9ur_Z-Gu5gS5M0WnKtHV07Vo6eL6nZHzruw/viewform?usp=sf_link. You will get links to the missing videos within 72 hours.
+ (b)  Submit a video request by agreeing to terms of use at:  https://docs.google.com/forms/d/e/1FAIpQLSc3yHyAranhpkC9ur_Z-Gu5gS5M0WnKtHV07Vo6eL6nZHzruw/viewform?usp=sf_link. You will get links to the missing videos within 7 days (recently I got more occupied, some delays may be expected yet I'll try to share in one week. If you are in urgent need, drop me an email.)
 
 File Description
 -----------------
