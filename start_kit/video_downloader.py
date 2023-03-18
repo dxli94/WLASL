@@ -11,6 +11,9 @@ import logging
 logging.basicConfig(filename='download_{}.log'.format(int(time.time())), filemode='w', level=logging.DEBUG)
 logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 
+# Set this to youtube-dl if you want to use youtube-dl.
+# The the README for an explanation regarding yt-dlp vs youtube-dl.
+youtube_downloader = "yt-dlp"
 
 def request_video(url, referer=''):
     user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
@@ -100,10 +103,9 @@ def download_nonyt_videos(indexfile, saveto='raw_videos'):
 
 
 def check_youtube_dl_version():
-    ver = os.popen('youtube-dl --version').read()
+    ver = os.popen(f'{youtube_downloader} --version').read()
 
-    assert ver, "youtube-dl cannot be found in PATH. Please verify your installation."
-    assert ver >= '2020.03.08', "Please update youtube-dl to newest version."
+    assert ver, f"{youtube_downloader} cannot be found in PATH. Please verify your installation."
 
 
 def download_yt_videos(indexfile, saveto='raw_videos'):
@@ -127,7 +129,7 @@ def download_yt_videos(indexfile, saveto='raw_videos'):
                 logging.info('YouTube videos {} already exists.'.format(video_url))
                 continue
             else:
-                cmd = "youtube-dl \"{}\" -o \"{}%(id)s.%(ext)s\""
+                cmd = f"{youtube_downloader} \"{{}}\" -o \"{{}}%(id)s.%(ext)s\""
                 cmd = cmd.format(video_url, saveto + os.path.sep)
 
                 rv = os.system(cmd)
