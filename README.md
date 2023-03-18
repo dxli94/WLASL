@@ -7,6 +7,10 @@ Please visit the [project homepage](https://dxli94.github.io/WLASL/) for news up
 
 Please **star the repo** to help with the visibility if you find it useful.
 
+**yt-dlp vs youtube-dl** youtube-dl has had low maintance for a while now and does not work for some youtube videos, see this [issue](https://github.com/ytdl-org/youtube-dl/issues/30568).
+[yt-dlp](https://github.com/yt-dlp/yt-dlp) is a more up to date fork, which seems to work for all youtube videos. Therefore `./start_kit/video_downloader.py` uses yt-dlp by default but can be switched back to youtube-dl in the future by adjusting the `youtube_downloader` variable.
+If you have trouble with yt-dlp make sure update to the latest version, as Youtube is constantly changing.
+
 Download Original Videos
 -----------------
 1. Download repo.
