@@ -9,3 +9,41 @@ code/I3D/archived/
 *.pt
 
 *.zip
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.py[cod]
+*$py.class
+
+# Claude
+.claude/*
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Poetry
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+__pycache__/
+*.so
