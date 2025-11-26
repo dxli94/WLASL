@@ -1,11 +1,17 @@
-start_kit/download_*.log
-start_kit/missing.txt
-start_kit/raw_videos/
-start_kit/raw_videos_mp4/
-start_kit/videos/
-
+*/start_kit/*.log
+*/start_kit/log/
+*/start_kit/missing.txt
+*/start_kit/raw_videos/
+*/start_kit/raw_videos_mp4/
+*/start_kit/videos/
+*/start_kit/videos_kaggle/
+*/start_kit/videos_full/
+.ipynb_checkpoints/
 */__pycache__
-code/I3D/archived/
+*/code/I3D/archived/
+*/code/TGCN/archived/
+data/
 *.pt
 
 *.zip
+.DS_Store
